@@ -1,0 +1,16 @@
+*.h5
+*.h5db
+*.hdf5
+*.pyc
+*.pkl
+*.jpg
+include
+lib
+local
+man
+pip-selfcheck.json
+share
+bin
+.ipynb_checkpoints/*
+model
+data
