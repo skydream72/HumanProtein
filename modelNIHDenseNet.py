@@ -54,8 +54,8 @@ def f1(y_true, y_pred):
     return 2*((precision*recall)/(precision+recall+K.epsilon()))
 
 # create the base pre-trained model
-def get_model(class_size):
-    input_tensor = Input(shape=(224,224,4),name='image_input')
+def get_model(class_size, image_size):
+    input_tensor = Input(shape=(image_size,image_size,4),name='image_input')
     #input_tensor=input_tensor
     #new_model = NASNetMobile(weights='imagenet', include_top=False, input_tensor=input_tensor) 
     new_model = densenet.DenseNet169(weights=None, include_top=False, input_tensor=input_tensor)
